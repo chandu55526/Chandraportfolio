@@ -1,77 +1,66 @@
-import React, { useState, useEffect, useContext, Suspense, lazy } from "react";
-import "./Project.scss";
-import Button from "../../components/button/Button";
-import { openSource, socialMediaLinks } from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
-import Loading from "../../containers/loading/Loading";
+import "./SystemDesign.scss";
+import {projectsSection} from "../../portfolio";
+import {Fade} from "react-reveal";
 
-const Projects = () => {
-  const GithubRepoCard = lazy(() =>
-    import("../../components/githubRepoCard/GithubRepoCard")
-  );
-  const FailedLoading = () => null;
-  const renderLoader = () => <Loading />;
-  const [repo, setrepo] = useState([]);
-  const { isDark } = useContext(StyleContext);
-
-  useEffect(() => {
-    const getRepoData = () => {
-      fetch("/profile.json")
-        .then(result => {
-          if (result.ok) {
-            return result.json();
-          }
-          throw result;
-        })
-        .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
-        })
-        .catch(function (error) {
-          console.error(
-            `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
-          );
-          setrepoFunction("Error");
-        });
-    };
-    getRepoData();
-  }, []);
-
-  function setrepoFunction(array) {
-    setrepo(array);
+export default function Projects() {
+  if (!projectsSection.display) {
+    return null;
   }
-
-  if (
-    !(typeof repo === "string" || repo instanceof String) &&
-    openSource.display
-  ) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
-          <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
-              if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
+  return (
+    <div id="projects">
+      <Fade bottom duration={1000} distance="20px">
+        <div className="main" id="achievements">
+          <div className="achievement-main-div">
+            <div className="achievement-header">
+              <h1 className="heading achievement-heading">
+                {projectsSection.title}
+              </h1>
+              <p className="subTitle achievement-subtitle">
+                {projectsSection.subtitle}
+              </p>
+            </div>
+            <div className="achievement-cards-div">
+              {projectsSection.projects.map((project, i) => {
+                return (
+                  <div key={i} className="achievement-card">
+                    <div className="achievement-img-div">
+                      <img
+                        src={project.image}
+                        alt={project.projectName}
+                        className="achievement-img"
+                      />
+                    </div>
+                    <div className="achievement-text-div">
+                      <h5 className="achievement-text-heading">
+                        {project.projectName}
+                      </h5>
+                      <p className="achievement-text-subtitle">
+                        {project.projectDesc}
+                      </p>
+                      {project.footerLinks && (
+                        <div className="achievement-links">
+                          {project.footerLinks.map((link, i) => {
+                            return (
+                              <a
+                                key={i}
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {link.name}
+                              </a>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 );
-              }
-              return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
-              );
-            })}
+              })}
+            </div>
           </div>
-          <Button
-            text={"More Projects"}
-            className="project-button"
-            href={socialMediaLinks.github}
-            newTab={true}
-          />
         </div>
-      </Suspense>
-    );
-  } else {
-    return <FailedLoading />;
-  }
-};
-
-export default Projects;
+      </Fade>
+    </div>
+  );
+} 

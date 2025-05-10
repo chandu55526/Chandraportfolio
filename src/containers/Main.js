@@ -7,7 +7,6 @@ import Skills from "./skills/Skills";
 import Education from "./education/Education";
 import Experience from "./experience/Experience";
 import Projects from "./projects/Projects";
-import SystemDesign from "./systemDesign/SystemDesign";
 import Achievement from "./achievement/Achievement";
 import Contact from "./contact/Contact";
 import SplashScreen from "./splashScreen/SplashScreen";
@@ -50,7 +49,6 @@ const Main = () => {
               <Education />
               <Experience />
               <Projects />
-              <SystemDesign />
               <Achievement />
               <Contact />
             </main>
