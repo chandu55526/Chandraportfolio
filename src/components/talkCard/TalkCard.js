@@ -15,11 +15,13 @@ export default function TalkCard({talkDetails}) {
           <p className="talk-card-subtitle">{talkDetails.subtitle}</p>
 
           <div className="card-footer-button-div">
-            <a href={talkDetails.slides_url} target="_" className="talk-button">
-              Slides
-            </a>
+            {talkDetails.slides_url && (
+              <a href={talkDetails.slides_url} target="_" className="talk-button">
+                View Design
+              </a>
+            )}
             <a href={talkDetails.event_url} target="_" className="talk-button">
-              Event
+              GitHub
             </a>
           </div>
         </div>

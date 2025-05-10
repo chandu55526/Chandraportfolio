@@ -24,16 +24,16 @@ export default function Talks() {
           >
             {talkSection.subtitle}
           </p>
-          {talkSection.talks.map((talk, i) => {
+          {talkSection.projects.map((project, i) => {
             return (
               <TalkCard
                 key={i}
                 talkDetails={{
-                  title: talk.title,
-                  subtitle: talk.subtitle,
-                  slides_url: talk.slides_url,
-                  event_url: talk.event_url,
-                  image: talk.image,
+                  title: project.projectName,
+                  subtitle: project.projectDesc,
+                  slides_url: project.image,
+                  event_url: project.footerLink[0].url,
+                  image: project.image,
                   isDark
                 }}
               />
