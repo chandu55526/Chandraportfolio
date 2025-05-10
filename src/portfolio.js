@@ -207,9 +207,9 @@ const achievementSection = {
   display: true
 };
 
-// System Design Section
-const systemDesignSection = {
-  title: "System Design",
+// Projects Section
+const projectsSection = {
+  title: "Projects",
   subtitle: "High-level architecture of scalable systems I've built and deployed.",
   projects: [
     {
@@ -281,7 +281,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  systemDesignSection,
+  projectsSection,
   contactInfo,
   twitterDetails,
   isHireable,
