@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Chandusportfolio/static/css/main.a34d82b8.css",
+    "main.js": "/Chandusportfolio/static/js/main.5340ebaf.js",
+    "static/media/shadowHawk.png": "/Chandusportfolio/static/media/shadowHawk.a7f20d1cdd72f0f3b7ca.png",
+    "static/media/skytrace.png": "/Chandusportfolio/static/media/skytrace.43c488b14afd23b52921.png",
+    "static/media/Montserrat-Regular.ttf": "/Chandusportfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/unt-logo.png": "/Chandusportfolio/static/media/unt-logo.94ff01d56310662a6bf1.png",
+    "static/media/Agustina.woff": "/Chandusportfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/contactMailDark.svg": "/Chandusportfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/Chandusportfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/aws-logo.png": "/Chandusportfolio/static/media/aws-logo.0b47a639eacd47b5541c.png",
+    "index.html": "/Chandusportfolio/index.html",
+    "main.a34d82b8.css.map": "/Chandusportfolio/static/css/main.a34d82b8.css.map",
+    "main.5340ebaf.js.map": "/Chandusportfolio/static/js/main.5340ebaf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a34d82b8.css",
+    "static/js/main.5340ebaf.js"
+  ]
+}
