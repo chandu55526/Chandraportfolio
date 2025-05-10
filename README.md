@@ -3,7 +3,7 @@
 ## A clean, beautiful and responsive portfolio template for Developers!
 
 <p align="center">
-  <img src="src/assets/images/readme.png" width="800" alt="Portfolio Preview"/>
+  <img src="https://raw.githubusercontent.com/chandu55526/Chandraportfolio/master/src/assets/images/readme.png" width="800" alt="Portfolio Preview"/>
 </p>
 
 Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
