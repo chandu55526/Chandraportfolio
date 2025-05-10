@@ -68,10 +68,9 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "University of North Texas",
       logo: require("./assets/images/unt-logo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2022 – May 2024",
@@ -113,10 +112,10 @@ const workExperiences = {
   display: true,
   experiences: [
     {
-      role: "Software Development Engineer",
+      role: "Software Engineer",
       company: "Cortracker Inc",
       companylogo: "",
-      date: "June 2020 – August 2022",
+      date: "June 2022 – Present",
       desc: "Engineered Node.js/TypeScript microservices on AWS (Lambda, SQS, DynamoDB) for 500K+ tx/day driving finance alerts",
       descBullets: [
         "Implemented CloudWatch and IAM-secured JWT flows, cutting security violations and boosting alert responsiveness by 40%",
@@ -129,7 +128,7 @@ const workExperiences = {
       role: "Software Development Engineer Intern",
       company: "Cortracker Inc",
       companylogo: "",
-      date: "May 2019 – August 2019",
+      date: "May 2022 – August 2022",
       desc: "Designed Django/PostgreSQL dashboards enabling analysts to reduce report time by 60% for executive decision cycles",
       descBullets: [
         "Optimized SQL indexes to reduce dashboard latency from 9s to <2s under live production queries",
@@ -155,9 +154,9 @@ const bigProjects = {
   subtitle: "Some of my featured work.",
   projects: [
     {
-      image: "", // No image as per instructions
+      image: "",
       projectName: "ShadowHawk",
-      projectDesc: "Browser threat detection using ML + Spring Boot",
+      projectDesc: "Browser threat detection using ML + Spring Boot (2023)",
       footerLink: [
         { name: "GitHub", url: "https://github.com/yourusername/shadowhawk" }
       ]
@@ -165,7 +164,7 @@ const bigProjects = {
     {
       image: "",
       projectName: "SkyTrace",
-      projectDesc: "Real-time flight tracking using Flask, React, AWS",
+      projectDesc: "Real-time flight tracking using Flask, React, AWS (2022)",
       footerLink: [
         { name: "GitHub", url: "https://github.com/yourusername/skytrace" }
       ]
@@ -184,8 +183,7 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Teaching Assistant – University of North Texas",
-      subtitle:
-        "Mentored 100+ students in Java, Python, and DSA; led inclusive workshops in debugging and system design.",
+      subtitle: "Mentored 100+ students in Java, Python, and DSA; led inclusive workshops in debugging and system design (2022-2024).",
       image: require("./assets/images/unt-logo.png"),
       footerLink: [
         {
@@ -196,8 +194,7 @@ const achievementSection = {
     },
     {
       title: "AWS Certified Developer – Associate",
-      subtitle:
-        "Earned in-depth certification for designing and deploying secure, scalable applications using AWS services.",
+      subtitle: "Earned in-depth certification for designing and deploying secure, scalable applications using AWS services (2023).",
       image: require("./assets/images/aws-logo.png"),
       footerLink: [
         {
@@ -218,7 +215,7 @@ const systemDesignSection = {
     {
       image: require("./assets/images/shadowHawk.png"),
       projectName: "ShadowHawk: Real-Time Browser Threat Detection",
-      projectDesc: "Modular microservices with Spring Boot, Kafka, and ML classification — optimized for sub-200ms alerts.",
+      projectDesc: "Modular microservices with Spring Boot, Kafka, and ML classification — optimized for sub-200ms alerts (2023).",
       footerLinks: [
         {
           name: "View Design",
@@ -233,7 +230,7 @@ const systemDesignSection = {
     {
       image: require("./assets/images/skytrace.png"),
       projectName: "SkyTrace: Real-Time Flight Tracking",
-      projectDesc: "Cloud-based event pipeline with React, Flask, and AWS — processes 20K+ location events/sec.",
+      projectDesc: "Cloud-based event pipeline with React, Flask, and AWS — processes 20K+ location events/sec (2022).",
       footerLinks: [
         {
           name: "View Design",
