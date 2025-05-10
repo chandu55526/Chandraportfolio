@@ -1,5 +1,7 @@
 # Chandra's Portfolio ⚡️
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-blue)](https://chandu55526.github.io/Chandraportfolio)
+
 ## A High-Performance, Scalable Portfolio Showcasing Technical Excellence
 
 <p align="center">
