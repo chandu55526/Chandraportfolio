@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Chandra Sekhar V",
+  username: "ChandusPortfolio",
   title: "Hi all, I'm Chandra Sekhar V",
   subTitle: emoji(
     "Software Engineer | Backend + Full Stack based in United States. Experienced in building scalable backend and full stack solutions with Node.js, Django, React.js, PostgreSQL, Docker, Kubernetes, AWS, Terraform, and System Design."
