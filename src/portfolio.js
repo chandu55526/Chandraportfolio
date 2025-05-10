@@ -4,6 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
+import { Helmet } from "react-helmet";
 
 // Splash Screen
 
