@@ -147,32 +147,6 @@ const openSource = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Projects",
-  subtitle: "Some of my featured work.",
-  projects: [
-    {
-      image: "",
-      projectName: "ShadowHawk",
-      projectDesc: "Browser threat detection using ML + Spring Boot (2023)",
-      footerLink: [
-        { name: "GitHub", url: "https://github.com/yourusername/shadowhawk" }
-      ]
-    },
-    {
-      image: "",
-      projectName: "SkyTrace",
-      projectDesc: "Real-time flight tracking using Flask, React, AWS (2022)",
-      footerLink: [
-        { name: "GitHub", url: "https://github.com/yourusername/skytrace" }
-      ]
-    }
-  ],
-  display: true
-};
-
 // Achievement Section
 // Include certificates, talks etc
 
@@ -279,7 +253,6 @@ export {
   techStack,
   workExperiences,
   openSource,
-  bigProjects,
   achievementSection,
   projectsSection,
   contactInfo,
